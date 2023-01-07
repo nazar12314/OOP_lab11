@@ -4,8 +4,8 @@ public class GiftMail implements MailCode {
     private GiftMail() {}
 
     private static GiftMail giftMail;
-    private final static String HEADER = "Special gift proposition!";
-    private final static String TEMPLATE =
+    private static final String HEADER = "Special gift proposition!";
+    private static final String TEMPLATE =
             "Hello %NAME, I am very exited to offer you a special proposition,"
             +
             " only from 5th to 10th of April, "

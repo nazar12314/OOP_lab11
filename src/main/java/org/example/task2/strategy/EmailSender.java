@@ -13,7 +13,10 @@ import org.json.JSONObject;
 
 public class EmailSender {
 
-    public static void sendMail(MailInfo mailInfo, String receiver) throws MailjetException, MailjetSocketTimeoutException {
+    public static void sendMail(MailInfo mailInfo, String receiver)
+            throws MailjetException,
+            MailjetSocketTimeoutException
+    {
         MailjetClient client;
         MailjetRequest request;
         MailjetResponse response;

@@ -5,9 +5,9 @@ public class BirthdayGreetingMail implements MailCode {
 
     private BirthdayGreetingMail() {}
 
-    private final static String HEADER = "Happy birthday!";
+    private static final String HEADER = "Happy birthday!";
 
-    private final static String TEMPLATE =
+    private static final String TEMPLATE =
             "Hello %NAME, I want to congratulate you"
                     +
             " with your %AGE-th birthday, and wish you all the blessing you may need!";

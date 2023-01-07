@@ -13,5 +13,5 @@ public class MailInfo {
         return mailCode.generate(client);
     }
 
-    public String getHeader() {return mailCode.getHeader();}
+    public String getHeader() {return mailCode.getHeader(); }
 }

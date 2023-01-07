@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Config {
-    final private static String configFilePath = "src/main/java/org/example/task2/Config/config.properties";
+    private final static String CONFIGFILE = "src/main/java/org/example/task2/Config/config.properties";
 
     public static String get(String query) {
-        try (FileInputStream propsInput = new FileInputStream(configFilePath)) {
+        try (FileInputStream PROPSINPUT = new FileInputStream(CONFIGFILE)) {
             Properties properties = new Properties();
-            properties.load(propsInput);
+            properties.load(PROPSINPUT);
             return properties.getProperty(query);
-        } catch(IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
