@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Config {
-    private final static String CONFIGFILE = "src/main/java/org/example/task2/Config/config.properties";
+    private static final String CONFIGFILE = "src/main/java/org/example/task2/Config/config.properties";
 
     public static String get(String query) {
         try (FileInputStream PROPSINPUT = new FileInputStream(CONFIGFILE)) {
